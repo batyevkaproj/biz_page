@@ -58,7 +58,52 @@
         <a href="">Все услуги</a>
     </div>
   </header>
+  <main>
+    <div class="circle"></div>
+  </main>
   <style>
+    /* https://www.freecodecamp.org/news/css-shapes-explained-how-to-draw-a-circle-triangle-and-more-using-pure-css/ */
+
+    .circle {
+        background: lightblue;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%; 
+    }
+
+    .triangle {
+        width: 0;
+        height: 0;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        border-bottom: 80px solid lightblue;
+    }
+
+    .triangle2{
+     width: 0;
+     height: 0;
+     border-top: 40px solid transparent;
+     border-right: 80px solid lightblue;
+     border-bottom: 40px solid transparent;
+    }
+
+    .shape_outside {
+        float: left;
+        width: 100px;
+        height: 100px;
+        shape-outside: inset(20px 5px 30px 10px round 50px);
+        background: lightblue;
+    }
+
+    #circle {
+        float: left;
+        width: 300px;
+        height: 300px;
+        margin: 20px;
+        shape-outside: circle();
+        clip-path: circle();
+        background: lightblue;
+    }   
 
     @font-face {
         font-family: 'Montserrat';
@@ -400,6 +445,12 @@
 
     @media (min-width: 800px) {
         .burger {
+            display: none;
+        }
+    }
+
+    @media (min-width: 1666px) {
+        .banner {
             display: none;
         }
     }
