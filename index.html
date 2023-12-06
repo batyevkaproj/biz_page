@@ -33,7 +33,7 @@
         <a href="" class="blue mid-right-options-mobile mobile-800"><img class="" src="img/247.svg" width="32px" height="32px"></a>
         <a href="" class="gray mid-right-options-mobile mobile-800"><img class="" src="img/gear.svg" width="32px" height="32px"></a>
         <nav class="mid-right">
-            <div class="mid-right-options">
+            <div class="mid-right-options hide-1280">
                 <a href="" class="grn"><img class="med-icon" src="img/wallet.svg" width="32px" height="32px">Оплата</a>
                 <a href="" class="blue"><img class="med-icon" src="img/247.svg" width="32px" height="32px">Підтримка</a>
                 <a href="" class="gray"><img class="med-icon" src="img/gear.svg" width="32px" height="32px">Опції</a>
@@ -63,6 +63,11 @@
   </main>
   <style>
     /* https://www.freecodecamp.org/news/css-shapes-explained-how-to-draw-a-circle-triangle-and-more-using-pure-css/ */
+
+
+    .show-1280 {
+        display: none;
+    }
 
     .circle {
         background: lightblue;
@@ -240,6 +245,14 @@
         margin-left: 40px;
     }
 
+    .mid-right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 50px;
+    }
+
+
     .mid-left {
         display: flex;
         align-items: center;
@@ -307,7 +320,6 @@
     .mid-top {
         display: flex;
         align-items: center;
-        /* padding-left: 375px; */
         padding-left: 19%;
     }
 
@@ -364,11 +376,12 @@
     }
 
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1280px) {
         .mid-right-options-mobile {
             display: none;
         }
     }
+
 
     @media (max-width: 1420px) {
 
@@ -393,7 +406,7 @@
         }
     }
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1280px) {
         .mid-right {
             width: auto;
         }
@@ -405,8 +418,8 @@
         .mid-right-options {
             display: none;
         }
-
     }
+ 
 
     @media (max-width: 800px) {
         .mobile-800 {
@@ -426,7 +439,7 @@
             display: none;
         }
     }
-
+    
   </style>
 </body>
 </html>
