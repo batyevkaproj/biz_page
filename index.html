@@ -15,7 +15,7 @@
             <a href="">Карта покриття</a>
         </nav>
         <nav class="mid-top">
-            <a class="a mobile-800" href="">Звони нам! У нас быстрый дозвон<label class="mobile-1024">, живые операторы</label></a>
+            <a class="a mobile-800" href=""><label class="mobile-950">Звони нам! </label>У нас быстрый дозвон<label class="mobile-1024">, живые операторы</label></a>
             <a class="tel" href=""><img class="small-icon chat-icon" src="img/msg_small.svg" width="16px" height="16px">0 800 30 32 30</a>
             <a class="tel-arrow" href="/"><img class="small-icon small-icon-arrow" src="img/arrow_down.svg"></a>
         </nav>
@@ -53,7 +53,7 @@
         <img src="img/rectangle.svg" alt="">
         <a href="">Доступ  в <br> Интернет</a>
         <a class="mobile-800" href="">Трансляция ТВ и футбола <br> для зведений</a>
-        <a class="mobile-1024" href="">Строительство лакальных <br> сетей для офисов</a>
+        <a class="mobile-1024" href="">Строительство локальных <br> сетей для офисов</a>
         <a class="mobile-1420" href="">Видео наблюдение <br> для бизнеса</a>
         <a href="">Все услуги</a>
     </div>
@@ -108,7 +108,11 @@
         shape-outside: circle();
         clip-path: circle();
         background: lightblue;
-    }   
+    }
+    
+    
+
+
 
     @font-face {
         font-family: 'Montserrat';
@@ -437,6 +441,22 @@
     @media (max-width: 1666px) {
         .banner {
             display: none;
+        }
+    }
+
+
+
+    @media (max-width: 950px) {
+        .mobile-950 {
+            display: none;
+        }
+
+        .mid-top a {
+            padding-left: 13px;
+        }
+
+        .tel {
+            margin-left: auto;
         }
     }
     
