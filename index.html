@@ -15,7 +15,7 @@
             <a href="">Карта покриття</a>
         </nav>
         <nav class="mid-top">
-            <a class="a mobile-800" href=""><label class="mobile-950">Звони нам! </label>У нас быстрый дозвон<label class="mobile-1024">, живые операторы</label></a>
+            <a class="a mobile-880" href=""><label class="mobile-1024">Звони нам! </label>У нас быстрый дозвон<label class="mobile-1024">, живые операторы</label></a>
             <a class="tel" href=""><img class="small-icon chat-icon" src="img/msg_small.svg" width="16px" height="16px">0 800 30 32 30</a>
             <a class="tel-arrow" href="/"><img class="small-icon small-icon-arrow" src="img/arrow_down.svg"></a>
         </nav>
@@ -111,9 +111,6 @@
     }
     
     
-
-
-
     @font-face {
         font-family: 'Montserrat';
         src: url('fonts/Montserrat/Montserrat-SemiBold.ttf');
@@ -358,6 +355,7 @@
     }
 
     .right-top a{
+        white-space: nowrap;
         margin-left: 30px;
         color: white;
         font-family: 'MontserratReg';
@@ -430,8 +428,14 @@
         .mobile-800 {
             display: none;
         }
-
     }
+
+    @media (max-width: 880px) {
+        .mobile-880 {
+            display: none;
+        }
+    }
+
 
     @media (min-width: 801px) {
         .burger {
