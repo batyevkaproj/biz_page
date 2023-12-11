@@ -14,7 +14,7 @@
         <a class="tel tel-mobile" href=""><img class="small-icon chat-icon" src="img/msg_small.svg" width="16px" height="16px">0 800 30 32 30</a>
     </div>
     <div class="mid-mobile">
-        feawfe
+        <a class="logo-mobile" href="/"><img src="img/logo_mobile.svg" alt=""></a>
     </div>
     <div class="top">
         <nav class="left-top">
@@ -66,13 +66,22 @@
     </div>
   </header>
   <main>
-    <div class="circle"></div>
+    <!-- <div class="circle"></div> -->
   </main>
   <style>
 
+    * {
+        box-sizing: border-box;
+    }
+
 
     .mid-mobile{
-        height: 50px;
+        height: 51px;
+    }
+
+    .logo-mobile {
+        margin-left: 20px;
+        /* margin-top: 20px; */
     }
 
 
@@ -101,6 +110,7 @@
 
     .mid-mobile {
         display: none;
+        padding-top: 20px;
     }
 
 
@@ -124,11 +134,11 @@
     }
 
     .triangle2{
-     width: 0;
-     height: 0;
-     border-top: 40px solid transparent;
-     border-right: 80px solid lightblue;
-     border-bottom: 40px solid transparent;
+        width: 0;
+        height: 0;
+        border-top: 40px solid transparent;
+        border-right: 80px solid lightblue;
+        border-bottom: 40px solid transparent;
     }
 
     .shape_outside {
@@ -237,7 +247,6 @@
         width: 270px;
         min-width: 270px;
         height: 60px;
-        /* padding: 21px, 31px, 21px, 31px; */
         border-radius: 50px;
         gap: 10px;
         border-color: #DC662D;
@@ -524,7 +533,6 @@
 
         .mid-mobile {
             display: flex;
-            align-items: center;
         }
 
         .mobile {
