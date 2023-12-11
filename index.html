@@ -32,9 +32,9 @@
     <div class="modal">
 
         <div class="mid-right-options-modal">
-            <a href="" class="grn"><img class="med-icon" src="img/wallet.svg" width="32px" height="32px">Оплата</a>
-            <a href="" class="blue"><img class="med-icon" src="img/247.svg" width="32px" height="32px">Підтримка</a>
-            <a href="" class="gray"><img class="med-icon" src="img/gear.svg" width="32px" height="32px">Опції</a>
+            <a href="" class="grn"><img class="med-icon-modal" src="img/wallet.svg" width="32px" height="32px">Оплата</a>
+            <a href="" class="blue"><img class="med-icon-modal" src="img/247.svg" width="32px" height="32px">Підтримка</a>
+            <a href="" class="gray"><img class="med-icon-modal" src="img/gear.svg" width="32px" height="32px">Опції</a>
         </div>
 
         <div class="boyan"><img class="boyan-image" src="img/high-buildings.svg" alt=""><a href="/">Для Багатоповерхівок</a></div>
@@ -105,7 +105,7 @@
         font-weight: 600;
         line-height: 22px; /* 169.231% */
         text-transform: uppercase;
-        margin-bottom: 2px;
+        text-decoration: none;
     }
 
     .boyan-image {
@@ -426,6 +426,12 @@
         margin-left: 15px;
     }
 
+    .med-icon-modal {
+        position: relative;
+        top: 4px;
+        right: 10px;
+    }
+
     .top {
         display: flex;
         height: 60px;
@@ -705,10 +711,25 @@
         }
 
         .boyan {
-            display: block;
+            display: flex;
             height: 48.144px;
             background: #0E2D43;
             box-shadow: 0px 4px 29px 0px #081925;
+        }
+
+        .boyan a {
+            margin-top: 1.7%;
+            padding-left: 5.49px;
+        }
+
+        .boyan img {
+            width: 13.502px;
+            height: 18.45px;
+            flex-shrink: 0;
+        }
+
+        .mid-right-options-modal {
+            margin-left: 20px;
         }
     }
     
