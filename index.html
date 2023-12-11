@@ -9,6 +9,10 @@
 </head>
 <body>
   <header>
+    <div class="mobile">
+        <p class="p-mobile-top">Звони нам!<br>У нас быстрый дозвон,<br>живые операторы</p>
+        <a class="tel tel-mobile" href=""><img class="small-icon chat-icon" src="img/msg_small.svg" width="16px" height="16px">0 800 30 32 30</a>
+    </div>
     <div class="top">
         <nav class="left-top">
             <a href="">Акції</a>
@@ -63,6 +67,31 @@
   </main>
   <style>
     /* https://www.freecodecamp.org/news/css-shapes-explained-how-to-draw-a-circle-triangle-and-more-using-pure-css/ */
+
+
+    .p-mobile-top {
+        margin-left: 20px;
+        font-family: 'Montserrat';
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 13px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #BDBDBD;
+        width: 122px;
+        height: 39px;
+
+
+
+    }
+
+    .tel-mobile {
+        margin-right: 20px;
+    }
+
+    .mobile {
+        display: none;
+    }
 
 
     .show-1280 {
@@ -474,6 +503,30 @@
 
         .tel {
             margin-left: auto;
+        }
+    }
+
+    @media (max-width: 799px) {
+
+        .mid {
+            display: none;
+        }
+
+        .mobile {
+            display: flex;
+            align-items: center;
+        }
+
+        .connect {
+            display: none;
+        }
+
+        .top {
+            display: none;
+        }
+
+        .bottom {
+            display: none;
         }
     }
     
