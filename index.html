@@ -37,7 +37,10 @@
             <a href="" class="gray"><img class="med-icon" src="img/gear.svg" width="32px" height="32px">Опції</a>
         </div>
 
-        <div class="boyan"></div>
+        <div class="boyan"><img src="img/high-buildings.svg" alt=""></div>
+        <div class="forBoyanMenu">
+
+        </div>
 
     </div>
 
@@ -95,9 +98,7 @@
   <style>
 
     .boyan {
-        height: 48.144px;
-        background: #0E2D43;
-        box-shadow: 0px 4px 29px 0px #081925;
+        display: none;
     }
 
 
@@ -105,26 +106,12 @@
         box-sizing: border-box;
     }
 
+
     .mid-right-options-modal {
-        display: flex;
-        flex-direction: column;
+        display: none;
     }
 
 
-    .mid-right-options-modal img {
-        position: relative;
-        padding-bottom: 10px;
-    }
-
-    .mid-right-options-modal a {
-        display: flex;
-        font-family: 'Montserrat';
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 22px;
-        letter-spacing: 0px;
-        text-decoration: none;
-    }
 
     .bottom-mobile {
         margin: 20px 20px 0 20px;
@@ -678,6 +665,34 @@
             color: white;
             box-shadow: 0px 4px 20px 0px rgba(220, 102, 45, 0.50);
             cursor:pointer;
+        }
+
+        .mid-right-options-modal {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .mid-right-options-modal img {
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .mid-right-options-modal a {
+            display: flex;
+            font-family: 'Montserrat';
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 22px;
+            letter-spacing: 0px;
+            text-decoration: none;
+        }
+
+        .boyan {
+            display: block;
+            height: 48.144px;
+            background: #0E2D43;
+            box-shadow: 0px 4px 29px 0px #081925;
         }
     }
     
