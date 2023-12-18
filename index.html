@@ -15,7 +15,7 @@
     </div>
     <div class="mid-mobile">
         <a class="logo-mobile" href="/"><img src="img/logo_mobile.svg" alt=""></a>
-        <a class="burger-mobile" href="/">
+        <a class="burger" data-micromodal-trigger="modal-1">
             <span class="firstOverlayLine spann-mobile"></span>
             <span class="secondOverlayLine spann-mobile"></span>
             <span class="thirdOverlayLine spann-mobile"></span>    
@@ -27,9 +27,10 @@
     <div class="second-bottom-mobile">
         <button class="connect-mobile">Заявка на підключення</button>
     </div>
+    <button data-custom-close="modal-1">close</button>
 
-
-    <div class="modal">
+    <a href="#" data-micromodal-trigger="modal-1"></a>
+    <div id="modal-1" aria-hidden="true">
 
         <div class="mid-right-options-modal">
             <a href="" class="grn"><img class="med-icon-modal" src="img/wallet.svg" width="32px" height="32px">Оплата</a>
@@ -45,13 +46,13 @@
 
         <div class="boyan boyan-2"><img class="boyan-image boyan-image-private" src="img/private_sector.svg" alt=""><a href="/">Приватним Будинкам</a></div>
 
-        <div class="forBoyanMenu2">
+        <div class="forBoyanMenu">
 
         </div>
 
-        <div class="boyan boyan-2"><img class="boyan-image" src="img/buiss.svg" alt=""><a href="/">Для Бізнеса</a></div>
+        <div class="boyan boyan-3"><img class="boyan-image" src="img/buiss.svg" alt=""><a href="/">Для Бізнеса</a></div>
 
-        <div class="forBoyanMenu2">
+        <div class="forBoyanMenu">
 
         </div>
 
@@ -88,7 +89,7 @@
                 <a href="" class="gray"><img class="med-icon" src="img/gear.svg" width="32px" height="32px">Опції</a>
             </div>
                 <button class="connect">Заявка на підключення</button>
-                <a class="burger" href="/">
+                <a class="burger" href="/" data-micromodal-trigger="modal-1">
                     <span class="firstOverlayLine spann"></span>
                     <span class="secondOverlayLine spann"></span>
                     <span class="thirdOverlayLine spann"></span>
@@ -754,5 +755,21 @@
     }
     
   </style>
+
+  <script src="https://unpkg.com/micromodal@0.4.10/dist/micromodal.min.js"></script>
+  <script>
+    MicroModal.init({
+        onShow: modal => console.info(`${modal.id} is shown`), // [1]
+        onClose: modal => console.info(`${modal.id} is hidden`), // [2]
+        openTrigger: 'data-custom-open', // [3]
+        closeTrigger: 'data-custom-close', // [4]
+        openClass: 'is-open', // [5]
+        disableScroll: true, // [6]
+        disableFocus: false, // [7]
+        awaitOpenAnimation: false, // [8]
+        awaitCloseAnimation: false, // [9]
+        debugMode: true // [10]
+    });
+  </script>
 </body>
 </html>
