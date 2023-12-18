@@ -1,13 +1,4 @@
 <template>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-</head>
-<body>
   <header>
     <div class="mobile">
         <p class="p-mobile-top">Звони нам! У нас<br>быстрый дозвон,<br>живые операторы</p>
@@ -108,27 +99,6 @@
         <a href="">Все услуги</a>
     </div>
   </header>
-
-
-
-  <script src="https://unpkg.com/micromodal@0.4.10/dist/micromodal.min.js"></script>
-  <script>
-    MicroModal.init({
-        onShow: modal => console.info(`${modal.id} is shown`), // [1]
-        onClose: modal => console.info(`${modal.id} is hidden`), // [2]
-        openTrigger: 'data-custom-open', // [3]
-        closeTrigger: 'data-custom-close', // [4]
-        openClass: 'is-open', // [5]
-        disableScroll: true, // [6]
-        disableFocus: false, // [7]
-        awaitOpenAnimation: false, // [8]
-        awaitCloseAnimation: false, // [9]
-        debugMode: true // [10]
-    });
-  </script>
-</body>
-</html>
-
 </template>
 
 <script>
