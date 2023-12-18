@@ -99,11 +99,18 @@
         <a href="">Все услуги</a>
     </div>
   </header>
+  <button @click="count++">Count is: {{ count }}</button>
 </template>
 
 <script>
 export default {
     name:'Master',
+
+    data() {
+    return {
+      count: 0
+    }
+  }
 };
 </script>
 
