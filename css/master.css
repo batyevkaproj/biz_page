@@ -1,3 +1,5 @@
+
+
 .boyan a {
     color: #DC662D;
     font-family: 'Montserrat';
@@ -7,25 +9,27 @@
     line-height: 22px; /* 169.231% */
     text-transform: uppercase;
     text-decoration: none;
+    /* convert all of the above to tailwind css */
+    @apply text-orange-500 font-semibold text-xs uppercase no-underline;
+
 }
 
 .boyan-image {
     margin-left: 24px;
     margin-top: 10.72px;
+    /* convert all of the above to tailwind css */
+    @apply ml-6 mt-4;
 }
 
 .boyan {
+    /* convert all of the above to tailwind css */
     display: none;
+    @apply flex flex-row items-center justify-between w-full h-16 bg-blue-900 shadow-md; 
 }
-
-
-/* * {
-    box-sizing: border-box;
-} */
-
 
 .mid-right-options-modal {
     display: none;
+    @apply flex flex-col items-start;
 }
 
 
